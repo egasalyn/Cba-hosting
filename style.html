@@ -1,0 +1,97 @@
+/* style.css - Tema Spider-Man */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://www.transparenttextures.com/patterns/crossed-stripes.png');
+  background-color: #ffffff;
+  color: #000;
+}
+
+header {
+  background-color: #E60012;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px #000;
+}
+
+nav {
+  background-color: #005BEA;
+  display: flex;
+  justify-content: center;
+  padding: 14px 0;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0%;
+  background: #FFD700;
+  transition: 0.3s;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+main {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  min-height: 70vh;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
+}
+
+main h2 {
+  color: #E60012;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+main p {
+  font-size: 1.1em;
+  color: #222;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+}
